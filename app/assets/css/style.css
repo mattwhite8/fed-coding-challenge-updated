@@ -18,6 +18,12 @@ a.navbar-brand {
   font-size: 2em;
 }
 
+.navbar-header > img {
+  width: 48px;
+  height: 48px;
+  float: left;
+}
+
 .navbar-default .navbar-brand {
   color: #1c264a;
 }

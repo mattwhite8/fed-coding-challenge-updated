@@ -146,16 +146,36 @@
           </div> <!-- /.row -->
 
           <div class="row">
-            <div>
+            <div class="tab_container">
 
               <!-- Nav tabs -->
-              <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#news" aria-controls="news" role="tab" data-toggle="tab">News</a></li>
-                <li role="presentation"><a href="#archive" aria-controls="archive" role="tab" data-toggle="tab">Archive</a></li>
-              </ul>
+              <input id="tab1" type="radio" name="tabs" checked>
+              <label for="tab1"><span>News</span></label>
+
+              <input id="tab2" type="radio" name="tabs">
+              <label for="tab2"><span>Archive</span></label>
 
               <!-- Tab panes -->
-              <div class="tab-content">
+              <br>
+              <section id="content1" class="tab-content">
+                <p class="tab-header">Lorem ipsum dolor</p>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis</p>
+                <p class="tab-header">Lorem ipsum dolor</p>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis</p>
+                <p class="tab-header">Lorem ipsum dolor</p>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis</p>
+              </section>
+              <section id="content2" class="tab-content">
+                <p class="tab-header">Lorem ipsum dolor</p>
+                <p class="tab-header">Lorem ipsum dolor</p>
+                <p class="tab-header">Lorem ipsum dolor</p>
+                <p class="tab-header">Lorem ipsum dolor</p>
+                <p class="tab-header">Lorem ipsum dolor</p>
+                <p class="tab-header">Lorem ipsum dolor</p>
+                <p class="tab-header">Lorem ipsum dolor</p>
+                <p class="tab-header">Lorem ipsum dolor</p>
+              </section>
+              <!-- <div class="tab-content">
                 <div role="tabpanel" class="tab-pane active" id="news">
                   <p class="tab-header">Lorem ipsum dolor</p>
                   <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis</p>
@@ -174,7 +194,7 @@
                   <p class="tab-header">Lorem ipsum dolor</p>
                   <p class="tab-header">Lorem ipsum dolor</p>
                 </div>
-              </div>
+              </div> -->
 
             </div>
           </div>

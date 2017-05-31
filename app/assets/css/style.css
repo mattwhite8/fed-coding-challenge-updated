@@ -126,46 +126,69 @@ div.login {
 div.login > a {
   text-decoration: none;
   color: white;
+  display: inline-block;
+  width: 100%;
 }
 
+.tab_container > input {
+  display: none;
+}
+
+.tab_container > label {
+  bottom: -9px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: -3px;
+  margin-bottom: 0;
+  border-top: 1px solid lightgray;
+  border-left: none;
+  border-right: 1px solid lightgrey;
+  border-radius: 0;
+  background-color: #deebe1;
+  width: 20%;
+  text-align: center;
+  color: #499ac4;
+}
+
+section {
+  display: none;
+}
+
+label > span {
+  font-weight: normal;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2 {
+  display: block;
+  background-color: whitesmoke;
+}
+
+.tab_container [id^="tab"]:checked + label {
+  background-color: whitesmoke;
+  color: black;
+  padding-bottom: 5px;
+  padding-top: 15px;
+  bottom: 0;
+}
 
 div.tab-content {
   background-color: whitesmoke;
 }
 
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-  background-color: whitesmoke;
-  padding-bottom: 5px;
-  padding-top: 15px;
-  line-height: 1.428571;
-  bottom: 0;
-}
-
-.nav-tabs > li > a {
-  bottom: -9px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-right: -1px;
-  border: 1px solid lightgray;
-  border-left: none;
-  border-right: none;
-  border-radius: 0;
-  background-color: #deebe1;
-}
-
-div#news.tab-pane.active > p {
+section#content1.tab-content > p {
   padding-left: 10px;
 }
 
-div#news.tab-pane.active > p:last-child {
+section#content1.tab-content > p:last-child {
   padding-bottom: 25px;
 }
 
-div#archive.tab-pane.active > p {
+section#content2.tab-content > p {
   padding-left: 10px;
 }
 
-div#archive.tab-pane.active > p:last-child {
+section#content2.tab-content > p:last-child {
   padding-bottom: 25px;
 }
 
@@ -310,7 +333,7 @@ tbody > tr:last-child {
   border-bottom: none;
 }
 
-h2#myModalLabel.modal-title {
+h2#myModal.modal-title {
   font-weight: 400;
 }
 
